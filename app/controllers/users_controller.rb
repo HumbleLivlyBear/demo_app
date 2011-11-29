@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all # when we all User.all, it returns an array with database
 
     respond_to do |format|
       format.html # index.html.erb
